@@ -74,7 +74,7 @@ def menu (inventario)
     puts
     menu(inventario)
 
-  when "62"
+  when "6"
     puts "Ingrese el nombre del ítem sobre el cual desea saber su existencia"
     nomitem = gets.chomp.to_s
     if inventario.key?(nomitem)
