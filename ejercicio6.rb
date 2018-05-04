@@ -37,6 +37,10 @@ restaurant_menu.each {|key, value| arreglo_value.push(value)}
 print arreglo_value
 puts
 
-restaurant_menu.each {|key, value| restaurant_menu[key] = value * 1.19}
+# restaurant_menu.each {|key, value| restaurant_menu[key] = value * 1.19}
+# print restaurant_menu
+# puts
+
+restaurant_menu.each {|key, value| restaurant_menu[key] *= 0.8 if key.split.size > 1}
 print restaurant_menu
 puts
